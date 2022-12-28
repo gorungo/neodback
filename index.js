@@ -15,6 +15,10 @@ app.get('/api/test/finish', (req,res) => {
   })
 })
 
+app.get('/api/test/test', (req,res) => {
+  res.status(200).json('ok')
+})
+
 app.listen(PORT, () => console.log('Started on: ' + PORT))
 
 const sendMail = async (data) => {
