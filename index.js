@@ -42,7 +42,7 @@ const sendMail = async (data) => {
 
     const mailOptions = {
       from: `${process.env.FromName} <${process.env.FromEmail}>`,
-      to: data.to,
+      to: `${data.name} <${data.email}>`,
       subject: 'Результаты тестирования',
       text: data.text,
       html: data.html,
