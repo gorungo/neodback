@@ -44,7 +44,6 @@ const sendMail = async (data) => {
       from: `${process.env.FromName} <${process.env.FromEmail}>`,
       to: `${data.name} <${data.email}>`,
       subject: 'Результаты тестирования',
-      text: data.text,
       html: data.html,
     }
 
