@@ -42,7 +42,7 @@ const sendMail = async (data) => {
 
     const mailOptions = {
       from: `${process.env.FromName} <${process.env.FromEmail}>`,
-      to: `${data.name} <${data.email}>`,
+      to: `${data.name} <${data.email}>, Site <neo.diagnostika@mail.ru>`,
       subject: 'Результаты тестирования',
       html: data.html,
     }
